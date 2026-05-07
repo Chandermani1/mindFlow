@@ -5,12 +5,12 @@ const Login: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#101415] flex flex-col lg:flex-row relative overflow-hidden">
       {/* Left Branding/Hero Section */}
-      <div className="hidden lg:flex lg:w-1/2 relative bg-gradient-to-br from-purple-900/20 to-black p-16 flex-col justify-center items-start">
+      <div className="hidden lg:flex lg:w-1/2 relative bg-gradient-to-br from-purple-900/20 to-black p-16 flex-col justify-start items-start">
         <div className="z-10 max-w-lg">
           <div className="flex items-center gap-3 mb-12">
             <div className="w-10 h-10 bg-white/10 backdrop-blur-xl rounded-lg flex items-center justify-center border border-white/10 shadow-glow-purple">
               <span className="material-symbols-outlined text-primary text-2xl">psychology</span>
-            </div>
+            </div >
             <span className="font-h3 text-h3 font-bold tracking-tight text-white uppercase">MindFlow</span>
           </div>
           

@@ -14,14 +14,16 @@
 
 @layer base {
   body {
-    @apply bg-[#101415] text-white;
+    background-color: #101415;
+    @apply text-white;
     font-family: 'Inter', sans-serif;
   }
+}
   
   h1, h2, h3 {
     font-family: 'Space Grotesk', sans-serif;
   }
-}
+
 
 @layer components {
   .shadow-glow-purple {

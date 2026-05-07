@@ -34,13 +34,13 @@ const LoginCard: React.FC = () => {
         <div className="space-y-2">
           <label className="text-label-caps text-on-surface-variant font-medium">Workspace Email</label>
           <div className="relative group">
-            <span className="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant text-xl group-focus-within:text-primary transition-colors">alternate_email</span>
+            <span className="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant text-xl group-focus-within:text-primary transition-colors"></span>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="name@company.com"
-              className="w-full bg-white/5 border border-white/10 rounded-xl py-3.5 pl-12 pr-4 text-white placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
+              className="w-full bg-white/5 border border-white/10 rounded-xl py-3.5 pl-12 pr-4 text-black placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
               required
             />
           </div>
@@ -58,7 +58,7 @@ const LoginCard: React.FC = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
-              className="w-full bg-white/5 border border-white/10 rounded-xl py-3.5 pl-12 pr-12 text-white placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
+              className="w-full bg-white/5 border border-white/10 rounded-xl py-3.5 pl-12 pr-12 text-black placeholder:text-white/20 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
               required
             />
             <button
@@ -77,7 +77,7 @@ const LoginCard: React.FC = () => {
           className="w-full bg-primary hover:bg-primary-light text-white font-bold py-4 rounded-xl shadow-glow-primary transition-all active:scale-[0.98] flex items-center justify-center gap-2 group overflow-hidden relative"
         >
           <span className="relative z-10">{isLoading ? 'AUTHENTICATING...' : 'CONTINUE'}</span>
-          {!isLoading && <span className="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1 relative z-10">arrow_forward</span>}
+          {!isLoading && <span className="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1 relative z-10"></span>}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
         </button>
       </form>
